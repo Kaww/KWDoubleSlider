@@ -94,7 +94,7 @@ public struct KWDoubleSlider: View {
                             .onChanged { value in
                                 let newPos = value.location.x / geometry.size.width
                                 
-                                if newPos > 1 { pos1 = 1 }
+                                if newPos > 1 { pos2 = 1 }
                                 else if newPos < (pos1 + 0.05) { pos2 = pos1 + 0.05 }
                                 else { pos2 = newPos }
                             }
