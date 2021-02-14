@@ -21,7 +21,7 @@ public struct KWDoubleSlider: View {
     
     var widthFactor: CGFloat { return pos2 - pos1 }
     
-    init(
+    public init(
         pos1: Binding<CGFloat>,
         pos2: Binding<CGFloat>,
         inactiveColor: Color = Color.black.opacity(0.2),
