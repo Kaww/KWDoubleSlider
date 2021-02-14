@@ -16,11 +16,10 @@ public struct KWDoubleSlider: View {
     @State var trackHeight: CGFloat
     @State var handleSize: CGFloat
     
-    // Handles positions (Scale of 0-1)
     @Binding var pos1: CGFloat
     @Binding var pos2: CGFloat
     
-    var widthFactor: CGFloat { return pos2 - pos1 } // Factor for how wide the overlay is
+    var widthFactor: CGFloat { return pos2 - pos1 }
     
     init(
         pos1: Binding<CGFloat>,
